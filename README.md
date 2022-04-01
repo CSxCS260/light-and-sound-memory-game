@@ -1,12 +1,12 @@
 # Pre-work - _Memory Game_
 
-**Memory Game** is a Light & Sound Memory game to apply for CodePath's SITE Program.
+**Animal Sound Memory Game** is a Light & Sound Memory game to apply for CodePath's SITE Program.
 
-Submitted by: **NAME**
+Submitted by: **Chami Sagara**
 
-Time spent: **#** hours spent in total
+Time spent: **4** hours spent in total
 
-Link to project: (insert your link here, should start with https://glitch.com...)
+Link to project: (https://glitch.com/edit/#!/spectacled-crawling-emmental)
 
 ## Required Functionality
 
