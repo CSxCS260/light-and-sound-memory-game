@@ -39,6 +39,8 @@ The following **additional** features are implemented:
 ## Video Walkthrough (GIF)
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
+
+
 Showing a full victory
 ![](https://cdn.glitch.global/63429d76-9684-4866-b15e-6c99902f15a0/Victory.gif?v=1648772724930)
 Showing a loss after 3 strikes
