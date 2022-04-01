@@ -1,0 +1,94 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  background-color: slateblue;
+  color: white;
+  margin: 1rem;
+  font-family: Trebuchet MS, sans-serif;
+  line-height: 1.5;
+}
+
+h1 {
+  font-family: Trebuchet MS, sans-serif;
+}
+
+
+button {
+  padding: 10px;
+  border-radius: 10px;
+  font-family: Trebuchet MS, sans-serif;
+}
+
+/* Targets any button in the "theGameBtns" div */
+#theGameBtns > button {
+  width:200px;
+  height:200px;
+  margin:2px;
+}
+
+/* Setting the colors for the buttons */
+#cowButton {
+    background: lightgreen;
+}
+#cowButton:active, #cowButton.lit {
+    background: forestgreen;
+}
+#sheepButton {
+    background: ivory;
+}
+#sheepButton:active, #sheepButton.lit{
+    background: darkgrey;
+}
+#horseButton {
+    background: hotpink;
+}
+#horseButton:active, #horseButton.lit{
+    background: darkmagenta;
+}
+#dogButton {
+    background: darkgoldenrod;
+}
+#dogButton:active, #dogButton.lit{
+    background: sienna;
+}
+#catButton {
+    background: lightskyblue;
+}
+#catButton:active, #catButton.lit{
+    background: royalblue;
+}
+#roosterButton {
+    background: tomato;
+}
+#roosterButton:active, #roosterButton.lit{
+    background: maroon;
+}
+
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+/*  Hides any element with the class "hidden" in its tag*/
+.hidden { 
+  display: none;
+}
+
+.center {  
+  margin: auto;
+  width: 50%;
+  padding: 5px;
+}

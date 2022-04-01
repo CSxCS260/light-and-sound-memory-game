@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Animal Sound Memory Game</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <!-- this is the start of content -->
+    <h1 class = "center">
+      Animal Sound Memory Game!
+    </h1>
+    <p class = "center">
+      Repeat the animal sounds in the pattern that the website plays :)
+    </p>
+    
+    <p class = "center">
+      Good luck!      
+    </p>
+    
+    <audio src="https://cdn.glitch.global/63429d76-9684-4866-b15e-6c99902f15a0/cowSound.mp3?v=1648712195077" id="cowSound"></audio>
+    <audio src="https://cdn.glitch.global/63429d76-9684-4866-b15e-6c99902f15a0/sheepSound.mp3?v=1648712177164" id="sheepSound"></audio>
+    <audio src="https://cdn.glitch.global/63429d76-9684-4866-b15e-6c99902f15a0/horseSound.mp3?v=1648712177099" id="horseSound"></audio>
+    <audio src="https://cdn.glitch.global/63429d76-9684-4866-b15e-6c99902f15a0/dogSound.mp3?v=1648712249635" id="dogSound"></audio>
+    <audio src="https://cdn.glitch.global/63429d76-9684-4866-b15e-6c99902f15a0/catSound.mp3?v=1648712177194" id="catSound"></audio>
+    <audio src="https://cdn.glitch.global/63429d76-9684-4866-b15e-6c99902f15a0/roosterSound.mp3?v=1648712177242" id="roosterSound"></audio>
+  
+    
+    <div id = "startAndPauseButtons" class = "center">
+      
+      <button id="startBtn" onclick="startGame()">
+        Start
+      </button> 
+      <button id="unpauseBtn" class="hidden" onclick="unpauseGame()">
+        Unpause
+      </button>
+
+      <button id="pauseBtn" class="hidden" onclick="pauseGame()">
+        Pause
+      </button>
+
+      <button id="stopBtn" class="hidden" onclick="stopGame()">
+        Stop
+      </button>
+    </div>
+    
+    <div id = "theGameBtns" class = "center">
+      <button id = "cowButton" onclick = "guess(1)" onmousedown = "startTone(1)" onmouseup = "stopTone(1)">
+        <img draggable="false" src="https://cdn.glitch.global/63429d76-9684-4866-b15e-6c99902f15a0/cow.png?v=1648723651304"/>
+      </button>
+      <button id = "sheepButton" onclick = "guess(2)" onmousedown = "startTone(2)" onmouseup = "stopTone(2)">
+        <img draggable="false" src="https://cdn.glitch.global/63429d76-9684-4866-b15e-6c99902f15a0/sheep.png?v=1648723651989"/>
+      </button>
+      <button id = "horseButton" onclick = "guess(3)" onmousedown = "startTone(3)" onmouseup = "stopTone(3)">
+        <img draggable="false" src="https://cdn.glitch.global/63429d76-9684-4866-b15e-6c99902f15a0/horse.png?v=1648723651568"/>
+      </button>
+      <button id = "dogButton" onclick = "guess(4)" onmousedown = "startTone(4)" onmouseup = "stopTone(4)">
+        <img draggable="false" src="https://cdn.glitch.global/63429d76-9684-4866-b15e-6c99902f15a0/dog.png?v=1648723651335"/>
+      </button>
+      <button id = "catButton" onclick = "guess(5)" onmousedown = "startTone(5)" onmouseup = "stopTone(5)"> 
+        <img draggable="false" src="https://cdn.glitch.global/63429d76-9684-4866-b15e-6c99902f15a0/cat.png?v=1648723963786"/>
+      </button>
+      <button id = "roosterButton" onclick = "guess(6)" onmousedown = "startTone(6)" onmouseup = "stopTone(6)">
+        <img draggable="false" src="https://cdn.glitch.global/63429d76-9684-4866-b15e-6c99902f15a0/rooster.png?v=1648723651267"/>
+      </button>
+    </div>
+    
+    <p id = "strikes" class = "center">
+    </p>
+    
+  </body>
+</html>
