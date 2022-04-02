@@ -90,6 +90,7 @@ Showing the pausing, unpausing, and stopping features as well as new random patt
 [My 5-minute Interview Recording](https://streamable.com/pe33zu)
 
 Script (In case volume is too low):
+   
    Hello CodePath, my name is Chami Sagara and I want to thank you so much for considering me for the Summer Internship for Tech Excellence!
    
    If I had the choice to solve any problem using technology, I believe it would be most important to focus my efforts on education. My parents immigrated here from Sri Lanka and they have told me an innumerable amount of times about how technology is quite scarce in the country and how difficult the Covid-19 pandemic was for students who weren’t able to participate in virtual learning due to the lack of access to computers with internet. I want to be able to focus my efforts on solving this digital divide not only in Sri Lanka, but across the world so that those in poverty can better access the information that we are privileged enough to have at our fingertips.
