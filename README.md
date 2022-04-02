@@ -25,12 +25,12 @@ The following **optional** features are implemented:
 - [x] Any HTML page elements (including game buttons) has been styled differently than in the tutorial
 - [ ] Buttons use a pitch (frequency) other than the ones in the tutorial
 - [x] More than 4 functional game buttons
-- [ ] Playback speeds up on each turn
+- [x] Playback speeds up on each turn
 - [x] Computer picks a different pattern each time the game is played
 - [x] Player only loses after 3 mistakes (instead of on the first mistake)
 - [x] Game button appearance change goes beyond color (e.g. add an image)
 - [x] Game button sound is more complex than a single tone (e.g. an audio file, a chord, a sequence of multiple tones)
-- [ ] User has a limited amount of time to enter their guess on each turn
+- [x] User has a limited amount of time to enter their guess on each turn
 
 The following **additional** features are implemented:
 
@@ -42,11 +42,11 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
 
 Showing a full victory
-![](https://cdn.glitch.global/63429d76-9684-4866-b15e-6c99902f15a0/Victory.gif?v=1648772724930)
-Showing a loss after 3 strikes
-![](https://cdn.glitch.global/63429d76-9684-4866-b15e-6c99902f15a0/Loss.gif?v=1648772724712)
+![](https://cdn.glitch.global/63429d76-9684-4866-b15e-6c99902f15a0/Success.gif?v=1648869297401)
+Showing a loss after 3 strikes due to mistakes and timer running out
+![](https://cdn.glitch.global/63429d76-9684-4866-b15e-6c99902f15a0/Defeat.gif?v=1648869296972)
 Showing the pausing, unpausing, and stopping features as well as new random pattern generated for a new game
-![](https://cdn.glitch.global/63429d76-9684-4866-b15e-6c99902f15a0/PausingResumingAndStopping.gif?v=1648772724834)
+![](https://cdn.glitch.global/63429d76-9684-4866-b15e-6c99902f15a0/PausingAndResumingAndStopping.gif?v=1648869297042)
 
 ## Reflection Questions
 
