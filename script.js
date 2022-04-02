@@ -3,12 +3,14 @@ var gamePlaying = false;
 var tonePlaying = false;
 var progress = 0;
 var volume = 0.5; // ranges from 0.0 to 1.0
-const clueHoldTime = 1500; //how long to hold each clue's light/sound
-const cluePauseTime = 333; //how long to pause in between clues
+var clueHoldTime; //how long to hold each clue's light/sound
+var cluePauseTime; //how long to pause in between clues
 const nextClueWaitTime = 1000; //how long to wait before starting playback of the clue sequence
 var guessCounter = 0;
 var mistakes = 0;
 var buttonTypes = ["cow", "sheep", "horse", "dog", "cat", "rooster"];
+var timer = 10;
+var interval;
 
 // THESE ALL CONTROL START/STOP/PAUSE/UNPAUSE BUTTONS
 
@@ -24,6 +26,8 @@ function startGame(){
   document.getElementById("startBtn").classList.add("hidden");
   document.getElementById("stopBtn").classList.remove("hidden");
   document.getElementById("pauseBtn").classList.remove("hidden");
+  clueHoldTime = 2250;
+  cluePauseTime = 333;
   playClueSequence();
 }
 
@@ -31,9 +35,13 @@ function stopGame(){
   // Resets the pattern array to be empty so the game can be restarted later 
   pattern = [];
   gamePlaying = false;
+  clearInterval(interval);
+  timer = 10;
   document.getElementById("stopBtn").classList.add("hidden");
   document.getElementById("pauseBtn").classList.add("hidden");
   document.getElementById("startBtn").classList.remove("hidden");
+  document.getElementById("strikes").innerHTML = "Strikes: 0";
+  document.getElementById("timer").innerHTML = "Timer: 0:10";
   
 }
 
@@ -43,6 +51,7 @@ function pauseGame(){
   document.getElementById("stopBtn").classList.add("hidden");
   document.getElementById("pauseBtn").classList.add("hidden");
   document.getElementById("unpauseBtn").classList.remove("hidden");
+  clearInterval(interval);
   
 }
 
@@ -52,7 +61,7 @@ function unpauseGame(){
   document.getElementById("unpauseBtn").classList.add("hidden");
   document.getElementById("stopBtn").classList.remove("hidden");
   document.getElementById("pauseBtn").classList.remove("hidden");
-  playClueSequence();
+  interval = setInterval(updateTimer, 1000);
 }
 
 
@@ -66,6 +75,13 @@ const freqMap = {
   6: "roosterSound"
 }
 function playTone(btn){ 
+  if (progress > 0){
+    var playRate = progress * (10/9);
+    document.getElementById(freqMap[btn]).playbackRate = playRate;
+  }
+  else{
+    document.getElementById(freqMap[btn]).playbackRate = 1;
+  }
   document.getElementById(freqMap[btn]).play();
 }
 function startTone(btn){
@@ -110,6 +126,12 @@ function playClueSequence(){
     delay += cluePauseTime;
   }
   guessCounter = 0; // resets counter for next round
+  setTimeout(function () {
+    interval = setInterval(updateTimer, 1000);
+    }
+    , delay);
+  
+
 }
 
 
@@ -136,7 +158,12 @@ function guess(btn){
         winGame();
       }
       else{
+        timer = 10;
         progress++;
+        clueHoldTime = clueHoldTime * (8/10);
+        cluePauseTime = cluePauseTime * (5/10);
+        clearInterval(interval);
+        document.getElementById("timer").innerHTML = "Timer: 0:10";
         playClueSequence();
       }
     }
@@ -145,14 +172,39 @@ function guess(btn){
     }
   }
   else{
-    if (mistakes < 2){
-      mistakes++;
-      playClueSequence();
+    addStrike();
+  }
+}
+
+// TIMER CONTROLLER
+
+function updateTimer(){
+  if (timer > 0){
+    timer--;
+    if (timer < 10){
+      document.getElementById("timer").innerHTML = "Timer: 0:0" + timer;
     }
     else{
-      mistakes = 3;
-      document.getElementById("strikes").innerHTML = "Strikes: " + mistakes;
-      loseGame();
+      document.getElementById("timer").innerHTML = "Timer: 0:" + timer;
     }
   }
+  else{
+    addStrike();
+  }
+}
+
+// STRIKE HANDLER
+function addStrike(){
+  clearInterval(interval);
+  if(mistakes < 2){
+    mistakes++;
+    timer = 10;
+    playClueSequence();
+  }
+  else{
+    mistakes = 3;
+    document.getElementById("strikes").innerHTML = "Strikes: " + mistakes;
+    loseGame();
+  }
+  document.getElementById("timer").innerHTML = "Timer: 0:10";
 }
