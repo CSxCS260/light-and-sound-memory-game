@@ -51,7 +51,7 @@ Showing the pausing, unpausing, and stopping features as well as new random patt
 ## Reflection Questions
 
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here.
-   [YOUR ANSWER HERE]
+   In addition to the prework guidelines provided by CodePath, I found it incredibly useful to utilize outside resources to help me with this webpage project. All prior knowledge of JavaScript programming was from Nick Morgan’s instructional book, JavaScript for Kids, which was a huge help in providing me with the fundamental building blocks for the language. Throughout the entire project, GeeksForGeeks.com was a vital resource for me as it allowed me to better understand the connection between HTML components and the underlying JavaScript that allowed for the interaction between the two. I also used ProgrammingHead.com, which was provided in the prework instructions, as a tutorial to help me understand how to add custom audio to the website by utilizing the HTML to import the audio source and then using JavaScript to control the audio’s playback.
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words)
    [YOUR ANSWER HERE]
