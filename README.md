@@ -87,7 +87,24 @@ Showing the pausing, unpausing, and stopping features as well as new random patt
 
 ## Interview Recording URL Link
 
-[My 5-minute Interview Recording](your-link-here)
+[My 5-minute Interview Recording](https://streamable.com/pe33zu)
+
+Script (In case volume is too low):
+   Hello CodePath, my name is Chami Sagara and I want to thank you so much for considering me for the Summer Internship for Tech Excellence!
+   
+   If I had the choice to solve any problem using technology, I believe it would be most important to focus my efforts on education. My parents immigrated here from Sri Lanka and they have told me an innumerable amount of times about how technology is quite scarce in the country and how difficult the Covid-19 pandemic was for students who weren’t able to participate in virtual learning due to the lack of access to computers with internet. I want to be able to focus my efforts on solving this digital divide not only in Sri Lanka, but across the world so that those in poverty can better access the information that we are privileged enough to have at our fingertips.
+
+   One of my favorite technical topics in computer science has been learning about binary search trees in my college’s data structures class and implementing them in my lab periods after lecture. To me, the existence of different types of search algorithms had not been a focus of mine during my previous years of computer science education. But learning about using binary search trees to divide data sets to be more easily traversable opened my eyes to how complicated these algorithms can be and how helpful some are for certain situations. I’m looking forward to learning more about self-balancing trees down the line as well.
+
+   One of the topics that has given me the most trouble has been recursion, because at first I felt it was confusing for a function to call itself in order to ultimately return a value because I couldn’t wrap my head around the layers that went into creating the recursive loop. It took a lot of time, but I was eventually able to find a method that allows me to understand recursion, which is to first create a base case, and then work my way up the loop until I am able to implement the recursive function for any necessary situation.
+
+   If I am working on a project and a teammate suggests a feature that I feel strongly will lead us down a bad direction, I wouldn’t immediately tell the teammate to forget about the idea. I strongly believe in the concept that there are never any bad ideas in a group project, since it is a definite possibility that my opinion is incorrect and my teammate was approaching the situation in a way I wasn’t able to. I personally believe the best solution would be to cautiously take a few steps in the direction that the teammate is pointing. If our team starts on a small scale and we are able to show that maybe the idea was somewhat misguided and misjudged, it can be used as a learning opportunity for our teammate. If my initial sense was wrong and the teammate was correct, then I can be the one to use it as a learning opportunity to grow from in the future. In this way, our team can remain united and it isn’t simply catering to my whims.
+
+   If I am selected for the SITE program, I would be ecstatic about the opportunity to shore up my full-stack web development skills through this incredible mentorship opportunity. I took the CodePath Android University course last semester and it was a tremendous learning opportunity for me because I was able to develop skills in app development that I would never have been able to on my own. Just like that experience, I believe the SITE program could help me develop skills in web development that I will later be able to implement with my team during the capstone project towards the end of the session.
+
+   Thank you so much for the opportunity and I hope I am able to join the program this summer!
+
+
 
 ## License
 
