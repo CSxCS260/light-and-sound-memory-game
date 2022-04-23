@@ -1,6 +1,6 @@
 # Pre-work - _Memory Game_
 
-**Animal Sound Memory Game** is a Light & Sound Memory game to apply for CodePath's FLT Program.
+**Animal Sound Memory Game** is a Light & Sound Memory game to apply for CodePath's FTL Program.
 
 Submitted by: **Chami Sagara**
 
