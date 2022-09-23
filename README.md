@@ -86,12 +86,6 @@ Showing the pausing, unpausing, and stopping features as well as new random patt
    A new feature I would add to my game is the ability to prevent user input while the computer is still playing the pattern. While a fair game would imply the user waits until the computer finishes the pattern and attempts to replicate it as best as they can, as a programmer, one must prepare for all possible situations. One of the possible situations is that that player attempts to cheat by playing each pattern element immediately after the computer plays it. This can be mitigated by preventing the computer from detecting the user’s input while the computer is still playing the sounds. This would likely utilize the “setTimeout()” function, and if I had more time, I would have loved to solve this problem.
 
 
-
-## Interview Recording URL Link
-
-[My 5-minute Interview Recording](https://www.loom.com/share/2ef94dc821ba435b8659ded08a5a215e)
-
-
 ## License
 
     Copyright [Chami Sagara]
