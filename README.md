@@ -7,6 +7,7 @@ Submitted by: **Chami Sagara**
 Time spent: **7** hours spent in total
 
 Link to project: (https://glitch.com/edit/#!/spectacled-crawling-emmental)
+Link to website: (https://spectacled-crawling-emmental.glitch.me/)
 
 ## Required Functionality
 
